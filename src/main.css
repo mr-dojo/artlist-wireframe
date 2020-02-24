@@ -7,7 +7,6 @@ body {
   font-size: 20px;
   color: #444;
   text-align: center;
-  line-height: 1.5;
 }
 
 nav,
@@ -26,14 +25,24 @@ nav {
   z-index: 10;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
 header {
-  padding: 12% 0;
+  padding: 6% 0;
 }
 
 section {
-  min-height: 200px;
-  padding: 6% 0;
+  padding: 5px;
   background-color: #bbb;
+}
+
+ul {
+  list-style: none;
 }
 
 .login-form {
@@ -41,6 +50,50 @@ section {
   align-items: center;
 }
 
+ul.item-list {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  padding: 5px;
+}
+
+li.item {
+  flex: 1;
+  padding: 5px;
+  height: 200px;
+  min-width: 200px;
+  width: 200px;
+  margin: 5px;
+}
+
+ul.item-attr {
+  padding: 5px;
+}
+
+ul.filter-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+}
+
+li.filter {
+  margin: 2px;
+  padding: 5px;
+}
+
+li.filter-new {
+  margin: 2px;
+  padding: 5px;
+}
+
 section:nth-child(even) {
   background-color: #ddd;
+}
+
+li.item,
+li.filter,
+section,
+li.filter-new {
+  border: 1px solid black;
 }
