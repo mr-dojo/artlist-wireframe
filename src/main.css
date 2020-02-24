@@ -41,6 +41,19 @@ section {
   background-color: #bbb;
 }
 
+section.login-section {
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+form.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+}
+
 ul {
   list-style: none;
 }
