@@ -72,6 +72,7 @@ ul.item-attr {
 
 ul.filter-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   padding: 0px;
   margin: 0px;
@@ -91,9 +92,29 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
+ul.add-item-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+}
+
+li.add-item {
+  margin: 2px;
+  padding: 5px;
+}
+
+li.add-item-new {
+  margin: 2px;
+  padding: 5px;
+}
+
 li.item,
 li.filter,
-section,
-li.filter-new {
+li.filter-new,
+li.add-item,
+li.add-item-new,
+section {
   border: 1px solid black;
 }
